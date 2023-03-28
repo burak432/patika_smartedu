@@ -1,0 +1,25 @@
+{
+  "name": "smartedu",
+  "version": "1.0.0",
+  "description": "patika smartedu project",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "smart",
+    "edu",
+    "patika",
+    "odev"
+  ],
+  "author": "burak432",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
