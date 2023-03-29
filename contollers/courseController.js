@@ -1,3 +1,5 @@
+const Course = require("../models/Course");
+
 exports.createCourse = (req, res) => {
   try {
     const course = Course.create(req.body);
@@ -6,6 +8,9 @@ exports.createCourse = (req, res) => {
       course,
     });
   } catch {
-    status: "failed", error;
+    res.status(400).json({
+      status: "failed",
+      error,
+    });
   }
 };
