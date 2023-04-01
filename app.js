@@ -24,14 +24,17 @@ app.set("views", path.join(__dirname, "views"));
 //mvc
 const pageController = require("./contollers/pageController");
 const courseController = require("./contollers/courseController");
+const categoryController = require("./contollers/categoryController");
 
 //route
 const pageRoute = require("./routes/pageRoute");
 const courseRoute = require("./routes/courseRoute");
+const categoryRoute = require("./routes/categoryRoute");
 
 //////////////////////routes//////////////////////
 app.use("/", pageRoute);
 app.use("/courses", courseRoute);
+app.use("/categories", categoryRoute);
 
 //server listener
 const port = 3000;
