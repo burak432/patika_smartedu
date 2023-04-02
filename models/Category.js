@@ -11,10 +11,7 @@ const CategorySchema = new mongoose.Schema({
     type: String,
     unique: true,
   },
-  category: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "category",
-  },
+
 });
 
 CategorySchema.pre("validate", function (next) {
